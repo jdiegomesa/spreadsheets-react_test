@@ -1,0 +1,31 @@
+{ "nombres": [
+    {
+      "ecosistema": "Humedales y plantas acuáticas",
+      "foto": "1dmHcBvTgdAq58TTOe9APibewN4KnMQJl",
+      "nombre": "Margarita de pantano",
+      "nombre_cientifico": "Senecio carbonelli",
+      "familia": "Asteraceae"
+    },
+    {
+      "ecosistema": "Bosque sub-andino",
+      "foto": "https://www.ecured.cu/images/5/5a/Platanillo1.jpg",
+      "nombre": "Platanillo de Cuba",
+      "nombre_cientifico": "Piper arboreum",
+      "familia": "Piperaceae"
+    },
+    {
+      "ecosistema": "Bosque de niebla",
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Quercus_humboldtii.JPG/800px-Quercus_humboldtii.JPG",
+      "nombre": "Roble colombiano",
+      "nombre_cientifico": "Quercus humboldtii",
+      "familia": "Fagaceae"
+    },
+    {
+      "ecosistema": "Páramo",
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Chusquea_scandens_-_Flickr_-_Dick_Culbert.jpg/652px-Chusquea_scandens_-_Flickr_-_Dick_Culbert.jpg",
+      "nombre": "Bambú andino",
+      "nombre_cientifico": "Chusquea scandens",
+      "familia": "Poaceae"
+    }
+  ]
+}

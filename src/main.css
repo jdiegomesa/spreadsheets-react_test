@@ -1,0 +1,175 @@
+:root{
+  --rojo: #f13835;
+  --texto: 'Roboto', sans-serif;
+  --letra: Arial, Helvetica, sans-serif;
+  --color_uno: white;
+  --color_dos: rgb(0 150 136 / 25%);
+}
+
+@custom-media --mobile (max-width: 700px);
+@custom-media --tablet (min-width: 700px);
+@custom-media --desktop (min-width: 1200px);
+
+*{
+	margin: 0;
+	padding: 0;
+	text-transform: none;
+	text-decoration: none;
+  color: black;
+  list-style: none;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.BotanicoPortada{
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20vh 10vw;
+  background:  linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(20, 158, 100, 0.73)), url('https://drive.google.com/uc?export=view&id=1sGINpPYjFTEQd_1T28WMjM7eGBRNKhYw') center;
+  background-size: cover;
+  &-title{
+    display: none;
+    font-family: var(--letra);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 48px;
+    text-align: center;
+  }
+  &-subtitle{
+    display: none;
+    font-family: var(--letra);
+    font-weight: 400;
+    font-size: 36px;
+  }
+}
+
+.Botanico-search{
+  width: 1280px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 24px 0;
+  @media(--mobile){
+    flex-wrap: wrap;
+    width: 90vw;
+  }
+  &-label{
+    font-family: var(--texto);
+    font-size: 16px;
+    margin-right: 16px;
+  }
+  &-input{
+    font-family: var(--texto);
+    width: 300px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #ccc;
+    padding: 6px;
+    margin-right: 16px;
+    @media (--mobile) {
+      margin-bottom: 2vw;
+    }
+  }
+  &-button{
+    font-family: var(--texto);
+    font-size: 16px;
+    padding: 6px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+    transition-duration: .5s;
+    &:hover{
+      background-color: #009688;
+      color: #fff;
+    }
+    @media (--mobile) {
+      margin-top: 2vw;
+    }
+  }
+}
+
+.Content{
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 24px;
+  @media(--mobile){
+    width: 90vw;
+    padding: 2vw;
+    flex-direction: column;
+  }
+}
+
+.Content-card{
+  width: 300px;
+  margin-bottom: 36px;
+  background-color: var(--color_dos);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  @media(--mobile) {
+    width: 90vw;
+    margin: 3vw 0;
+    border-radius: 2vw;
+    padding-bottom: 5vw;
+  }
+  &-flag{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ccc;
+    font-family: var(--texto);
+    color: #000;
+    padding: 6px 24px;
+  }
+  &-img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+    @media(--mobile) {
+      width: 90vw;
+      height: 90vw;
+      border-radius: 2vw;
+    }
+  }
+  &-title{
+    font-family: var(--texto);
+    color: #000;
+    text-align: center;
+    font-size: 40px;
+    padding: 12px;
+    @media(--mobile) {
+      font-size: 9vw;
+    }
+  }
+  &-text{
+    color: #000;
+    font-family: var(--texto);
+    font-size: 16px;
+    padding: 12px;
+    @media(--mobile) {
+      padding: 1vw 3vw;
+      font-size: 3.3vw;
+    }
+    & span{
+      font-weight: bold;
+    }
+  }
+}
