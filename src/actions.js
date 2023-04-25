@@ -1,4 +1,4 @@
-const dataUrl = 'https://sheets.googleapis.com/v4/spreadsheets/1Pol0UZZaFmRD6QeY3nyBKds3jQCD7ixgYqxkoN3P_ik/values/hoja?key=AIzaSyDieB0KccUfXLYivb0OEkXK-lI1dyJycxw';
+const dataUrl = '';
 
 export function searchAsync(query){
   return (dispatch) => {
